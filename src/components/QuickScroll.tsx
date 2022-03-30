@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import style from '../styles/quickScroll.module.css';
+import style from '../styles/general/quickScroll.module.css';
 
 interface QuickScrollProps {
   srcInfo: { href: string; alt: string };

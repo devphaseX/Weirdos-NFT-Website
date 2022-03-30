@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import style from '../styles/navigation.module.css';
+import style from '../styles/general/navigation.module.css';
 import { PrimaryButton } from './Button';
 
 const Navigation: FC = () => (

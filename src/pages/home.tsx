@@ -6,7 +6,7 @@ import RoadMap from '../components/sections/RoadMap';
 import ShowCase from '../components/sections/ShowCase';
 import Team from '../components/sections/Team';
 import Heroes from '../components/_home/Heroes';
-import '../styles/home.css';
+import '../styles/pages/home/index.css';
 
 export default function Home() {
   return (

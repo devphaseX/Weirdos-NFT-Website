@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import TypeWriter from 'typewriter-effect';
-import style from '../../styles/typewriterContainer.module.css';
+import style from '../../styles/pages/home/features/typewriterContainer.module.css';
 import { PrimaryButton } from '../Button';
 
 const TypewriterContainer: FC = () => {

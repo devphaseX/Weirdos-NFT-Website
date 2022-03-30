@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import style from '../styles/button.module.css';
+import style from '../styles/general/button.module.css';
 
 interface ButtonProps {
   innerRoute?: boolean;

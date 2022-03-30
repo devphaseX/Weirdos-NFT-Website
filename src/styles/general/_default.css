@@ -1,5 +1,6 @@
-@import url(./variables/_font.css);
-@import url(./variables/_heights.css);
+@import url(./_font_family.css);
+@import url(../variables/_font.css);
+@import url(../variables/_heights.css);
 *,
 *::before,
 *::after {

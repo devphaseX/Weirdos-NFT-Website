@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import style from '../../styles/heroes.module.css';
+import style from '../../styles/pages/home/sections/heroes.module.css';
 import TypewriterContainer from '../features/Typewriter';
 import QuickScroll from '../QuickScroll';
 import CoverVideo from './CoverVideo';

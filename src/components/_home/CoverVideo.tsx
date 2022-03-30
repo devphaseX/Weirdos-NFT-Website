@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import style from '../../styles/coverVideo.module.css';
+import style from '../../styles/pages/home/features/coverVideo.module.css';
 
 interface CoverVideoProps {
   src: string;
