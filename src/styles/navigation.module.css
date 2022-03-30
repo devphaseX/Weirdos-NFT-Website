@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-inline: auto;
+  height: var(--navHeight);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: var(--fontxxl);
+  color: var(--text-body);
+  transition: all 0.2 ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.routeNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routeItem:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.routeItem a {
+  color: var(--text-body);
+  font-size: var(--fontmd);
+}
+
+.routeItem a::after {
+  content: ' ';
+  display: block;
+  background-color: var(--text-body);
+  height: 2px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.routeItem a:hover::after {
+  width: 100%;
+}

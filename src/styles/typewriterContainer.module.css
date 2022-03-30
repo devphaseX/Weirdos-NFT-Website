@@ -1,0 +1,43 @@
+.typewriterContainer {
+  color: var(--text-body);
+  font-size: var(--fontxxl);
+  font-weight: bold;
+  width: 90%;
+  min-height: inherit;
+}
+
+.main_headline {
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+}
+
+.main_headline h2 {
+  font-size: inherit;
+}
+
+.typewriterBox {
+  margin-bottom: 2.4rem;
+}
+
+.typewriterBox span {
+  text-transform: uppercase;
+}
+
+span.text_1 {
+  color: blue;
+}
+
+span.text_2 {
+  color: orange;
+}
+
+span.text_3 {
+  color: red;
+}
+
+.subTitle {
+  font-size: var(--fontlg);
+  color: rgba(var(--text-rgba, 0.6));
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}

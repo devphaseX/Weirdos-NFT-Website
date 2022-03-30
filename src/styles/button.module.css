@@ -1,0 +1,46 @@
+.button {
+  display: inline-block;
+  outline: none;
+  font-size: var(--fontsm);
+}
+
+.button__primary {
+  background-color: var(--text-body);
+  color: var(--white);
+  border-radius: 50px;
+  padding: 1.44rem 3.68rem;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.button__primary:hover {
+  transform: scale(0.9);
+}
+
+.button__primary::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-body);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: inherit;
+  box-sizing: content-box;
+}
+
+.button__primary:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+}
+
+.button__primary a {
+  color: inherit;
+  font-size: var(--fontsm);
+  font-weight: 600;
+}
+
+.button__secondary {
+}

@@ -1,0 +1,10 @@
+.root {
+  --white: #fff;
+  --light-grey: #eeedde;
+  --white-rgba: rgb(255, 255, 255);
+  --text-rgba: rgb(32, 32, 32);
+  --dark-grey: #202020;
+  --bg-colour: var(--white);
+  --text-body: var(--dark-grey);
+  --carousel-colour: var(--light-grey);
+}
