@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import style from '../../styles/pages/home/sections/heroes.module.css';
-import TypewriterContainer from '../features/Typewriter';
-import QuickScroll from '../QuickScroll';
-import CoverVideo from './CoverVideo';
-import circleScrollBgDark from '../../assets/Rounded-Text-Black.png';
-import circleScrollBgLight from '../../assets/Rounded-Text-White.png';
-import useThemeDetection from '../../hooks/useThemeDetection';
+import style from '../../../styles/pages/home/sections/heroes.module.css';
+import TypewriterContainer from '../../features/Typewriter';
+import QuickScroll from '../../QuickScroll';
+import CoverVideo from '../../features/CoverVideo';
+import circleScrollBgDark from '../../../assets/Rounded-Text-Black.png';
+import circleScrollBgLight from '../../../assets/Rounded-Text-White.png';
+import useThemeDetection from '../../../hooks/useThemeDetection';
 
 const Heroes: FC = () => {
   const theme = useThemeDetection();

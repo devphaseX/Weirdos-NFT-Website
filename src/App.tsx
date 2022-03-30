@@ -1,4 +1,5 @@
 import 'normalize.css/normalize.css';
+import './styles/general/_default.css';
 import { BrowserRouter } from 'react-router-dom';
 import darkTheme from './styles/variables/_darkTheme.module.css';
 import lightTheme from './styles/variables/_lightTheme.module.css';
