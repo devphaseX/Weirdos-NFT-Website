@@ -22,7 +22,7 @@ const Carousel: FC = () => {
   return (
     <div>
       <Swiper
-        // autoplay={{ delay: 2000, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         pagination={{ type: 'fraction' }}
         navigation={true}
         effect={'cards'}
