@@ -1,0 +1,26 @@
+.roadmap > h1:first-of-type {
+  font-size: var(--fontxxl);
+  text-transform: uppercase;
+  color: var(--text-body);
+  text-align: center;
+  border-bottom: 2px solid var(--text-body);
+  width: fit-content;
+  margin-inline: auto;
+  background-color: var(--bg-colour);
+}
+
+.roadmap__container {
+  width: 70%;
+  margin-inline: auto;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

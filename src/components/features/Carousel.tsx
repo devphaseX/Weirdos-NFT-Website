@@ -7,15 +7,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import style from '../../styles/general/_carousel.module.css';
 import '../../styles/general/_carousel.module.css';
-import { combineClasses } from '../../utils';
+import { combineClasses, createRangeMap, analyseFilePath } from '../../utils';
 
-const imghrefs = Array.from({ length: 9 }, (_, i) => {
-  return {
-    path: `img/Nfts/bighead-${i + 1}.svg`,
-    get filename() {
-      return this.path.match(/(\w|-)+?\.\w+$/)![0];
-    },
-  };
+const imghrefs = createRangeMap(9, function (index) {
+  return analyseFilePath(`img/Nfts/bighead-${index + 1}.svg`);
 });
 
 const Carousel: FC = () => {

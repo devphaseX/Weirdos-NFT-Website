@@ -37,7 +37,7 @@ span.text_3 {
 
 .subTitle {
   font-size: var(--fontlg);
-  color: rgba(var(--text-rgba, 0.6));
+  color: var(--text-rgba);
   text-transform: capitalize;
   margin-bottom: 1rem;
 }

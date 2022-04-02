@@ -5,7 +5,7 @@ import { SVGIconProp } from '../types/icon';
 const Vector = ({
   progress = 0,
   ...props
-}: SVGIconProp & { progress: number }) => {
+}: Partial<SVGIconProp & { progress: number }>) => {
   return (
     <svg viewBox="0 0 52 2047" fill={props.fill || 'none'} {...props}>
       <path

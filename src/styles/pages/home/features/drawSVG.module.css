@@ -1,0 +1,36 @@
+.drawSVGContainer {
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.drawSVGContainer svg {
+  width: 100%;
+  height: 100%;
+}
+
+.blinker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--text-body);
+  border-radius: 50%;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    transform: translateX(-50%) scale(0.5);
+  }
+
+  to {
+    transform: translateX(-50%) scale(1);
+  }
+}
