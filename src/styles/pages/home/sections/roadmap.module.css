@@ -1,3 +1,7 @@
+.roadmap {
+  background-color: transparent;
+}
+
 .roadmap > h1:first-of-type {
   font-size: var(--fontxxl);
   text-transform: uppercase;

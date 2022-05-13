@@ -81,3 +81,29 @@ export function analyseFilePath(path: string): FileInfo {
     },
   });
 }
+
+type StyleClassName = string | undefined | null;
+
+export function createValidStyleClassValue(
+  styleClasses: Array<StyleClassName>
+) {
+  return styleClasses.map(allowStringWithNullFallback).join(' ');
+}
+
+const allowStringWithNullFallback = allowType(
+  (value) => typeof value === 'string',
+  null
+);
+
+export function allowType<V>(
+  typePredicate: (value: any) => boolean,
+  fallback: V
+) {
+  return function passAllowTypeThrough<T>(value: any): T | V {
+    return typePredicate(value) ? (value as T) : fallback;
+  };
+}
+
+export function randomNaiveId() {
+  return Math.random().toString(32).slice(2);
+}

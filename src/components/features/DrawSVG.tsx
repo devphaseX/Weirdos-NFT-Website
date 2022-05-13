@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Blinker = forwardRef<HTMLSpanElement>((_, ref) => (
-  <span ref={ref}></span>
+  <span ref={ref} role="presentation"></span>
 ));
 
 const DrawSVG: FC = () => {

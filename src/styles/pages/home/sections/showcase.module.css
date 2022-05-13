@@ -1,0 +1,83 @@
+.showcase {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--text-body);
+  position: relative;
+  flex-direction: column;
+}
+.cardrow {
+  margin: 2rem 0;
+  white-space: nowrap;
+  animation: move 20s linear infinite;
+  display: flex;
+}
+
+.cardrow_move_reverse {
+  animation-direction: reverse;
+}
+
+.card {
+  background-color: var(--bg-colour);
+  color: black;
+  margin: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card > div:first-child {
+  width: 25rem;
+  position: relative;
+}
+
+.card > div:first-child img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.card > div:nth-child(2) {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.28rem 1.6rem;
+  background-color: var(--text-body);
+  border: 2px solid var(--white-rgba);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.card > div:nth-child(2) :is(h3, h4) {
+  font-size: var(--fontsm);
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: var(--text-rgba);
+  margin-bottom: 6px;
+}
+
+.card > div:nth-child(2) p {
+  font-size: var(--fontmd);
+  color: var(--bg-colour);
+}
+
+.card [class='price_tag'] {
+  display: flex;
+  align-items: center;
+}
+
+.card [class='price_tag'] img {
+  width: 1.6rem;
+}

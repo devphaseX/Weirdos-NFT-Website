@@ -33,3 +33,7 @@ button {
   outline: none;
   border: none;
 }
+
+:not(:focus-visible) {
+  outline: none;
+}
